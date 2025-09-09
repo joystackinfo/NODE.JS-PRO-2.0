@@ -1,0 +1,12 @@
+{
+  "name": "urlmodule",
+  "version": "1.0.0",
+  "description": "helps handle web addresses",
+  "main": "url.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node url.js"
+  },
+  "author": "joy",
+  "license": "ISC"
+}
