@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
             const parsedData = querystring.parse(data);
             res.writeHead(200, { 'Content-Type': 'application/json' }); // Set response header to JSON
             res.end(JSON.stringify({
-                message: "Form data received",
+                message: "Form data received", // to indicate successful receipt.
                 parsedData : {
                     name: parsedData.name,
                 }
