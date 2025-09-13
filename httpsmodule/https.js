@@ -1,6 +1,6 @@
 // CREATE A HTTP SERVER IN THE NODE JS
 const http = require('http');
-const querystring = require('querystring');
+const querystring = require('querystring')
 
 const server = http.createServer((req, res) => {
     if (req.method === 'POST' && req.url === '/submit') {
