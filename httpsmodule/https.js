@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
         });
  req.on('end', () => {
             const parsedData = querystring.parse(data);
-            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.writeHead(200, { 'Content-Type': 'application/json' }); // Set response header to JSON
             res.end(JSON.stringify({
                 message: "Form data received",
                 parsedData : {
@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
             }));
         });
     } else {
-        res.writeHead(404, { 'Content-Type': 'text/plain' }); 
+        res.writeHead(404, { 'Content-Type': 'text/plain' }); // 404 means not found
         res.end("Route not found");
     }
 });
